@@ -3,7 +3,8 @@ import json
 import requests
 from .api_exception import RakutenApiException
 
-class BaseApi:
+
+class BaseApi(object):
     def __init__(self, options):
         self._options = options
         self._base_url = self._options['api_endpoint']

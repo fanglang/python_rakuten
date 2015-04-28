@@ -3,4 +3,3 @@ class RakutenApiException(Exception):
         super(RakutenApiException, self).__init__(message)
         self.message = message
         self.code = code
-
